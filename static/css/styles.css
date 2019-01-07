@@ -1,0 +1,190 @@
+body {
+    font-size:16px;
+    font-family: "Google Sans", Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+    margin:0;
+    padding:0;
+    height:100%;
+}
+.container{
+    min-height:100%;
+    position:relative;
+    padding:auto;
+}
+
+.sidebar {
+    height: 740px;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color:#56bc53;
+    overflow-x: hidden;
+    transition: 0.1s;
+    padding-top: 50px;
+}
+
+.sidebar a {
+    padding:15px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    display: block;
+    transition: 0.1s;
+}
+
+.sidebar a:hover {
+    color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color:#56bc53;
+    padding: 15px 15px;
+    border: none;
+    display:inline-block;
+    margin-right:10px;
+    float: left;
+    color: white;
+}
+
+.openbtn:hover {
+    background-color:#53d655;
+}
+
+#main {
+    transition: margin-left .3s;
+    padding: 16px;
+}
+#top{
+    /*display: inline-block;*/
+    background-color:#56bc53;
+    padding: 10px 15px;
+    border: none;
+    /*margin-right:10px;*/
+    text-align: center;
+    width: 100%;
+    color: white;
+    clear: both;
+    left: 0;
+    bottom: 0;
+}
+.myTitle{
+    display: inline-block;
+    text-transform: uppercase;
+    background-color:  #f9cf39;
+    border:3px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 15px;
+    text-decoration-style: solid;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 15px;}
+}
+.sidebar ul{
+    position: absolute;
+    bottom: 50px;
+}
+.sidebar ul>a{
+    display: inline-block;
+    padding: 5px;
+}
+.footer {
+    position: fixed;
+    overflow-x: hidden;
+    padding:0;
+    height: auto;
+    background-color:#56bc53;
+    text-align: center;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: #0a0a0a;
+    text-decoration:none;
+}
+
+.footer a{
+    text-decoration:none;
+}
+.login_button{
+    background-color:#56bc53;
+    float: right;
+    border:none;
+    text-decoration: none;
+    padding: 20px;
+    font-size: 15px;
+    color: white;
+}
+.signup_button{
+    float: right;
+    background-color:#56bc53;
+    border:none;
+    padding: 20px;
+    font-size: 15px;
+    text-decoration: none;
+    color: white;
+}
+.login_button:hover {
+    background-color:#53d655;
+}
+.signup_button:hover {
+    background-color:#53d655;
+}
+.row{
+
+}
+.column{
+    float: left;
+    width: 31.33%;
+    padding: 10px;
+    height: auto;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    margin:5px;
+    font-size: 17px; 
+    display:table-cell;
+    list-style: none;
+}
+.column ul,img{
+    list-style: none;
+}
+.column img{
+    padding:auto;
+    float: right;
+    display: inline-block;
+}
+.column li{
+    padding: 5px;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.social{
+    background-color: #7c7474;
+    width: 100%;
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+}
+*{
+    box-sizing: border-box;
+}
+body>p{
+    text-align: center;
+}

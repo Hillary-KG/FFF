@@ -1,0 +1,129 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static',filename='images/questioner.png') }}" style="width: 20px;height: 20px;border-radius: 50%;background-color: #ffff;">
+	<title>{% block title %}{% endblock title %}</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="static/css/styles.css">
+	{% block styles %}{% endblock styles %}
+</head>
+<body>
+	<div class="container" id="container">
+		<div id="sidebar" class="sidebar">
+	  	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+		<a href="#"><span style="padding: 10px;background-color: #f9cf39;border-radius: 10px;"><i class="fas fa-home"></i></span> Home</a>
+		<a href="#"><span style="padding: 10px;background-color: #f9cf39;border-radius: 10px;"><i class="fas fa-utensils"></i></span> Our Menu</a>
+		<a href="#"><span style="padding: 10px;background-color: #f9cf39;border-radius: 10px;"><i class="fas fa-map-marked-alt"></i></span>Contact Us</a>
+		<a href="#"><span style="padding: 10px;background-color: #f9cf39;border-radius: 10px;"><i class="fas fa-info-circle"></i></span>About Us</a>
+		<a href="#"><span style="padding: 10px;background-color: #f9cf39; border-radius: 10px;"><i class="fab fa-blogger"></i></span>Blog</a>
+		<ul id="social" class="social">
+			<span>Let's get social!</span><br>
+			<a href=""><img src="{{ url_for('static',filename='images/fb.png') }}" alt="Facebook" style="width: 20px;height: 20px;border-radius: 50%;"></a>
+			<a href=""><img src="{{ url_for('static',filename='images/twitter.png') }}" alt="Twitter" style="width: 20px;height: 20px;border-radius: 50%;"></a>
+			<a href=""><img src="{{ url_for('static',filename='images/ig.png') }}" alt="Instagram" style="width: 20px;height: 20px;border-radius: 50%;"></a>
+		</ul>
+		</div>
+		<div class="top" id="top">
+			<button class="openbtn" onclick="openNav()">☰ menu</button>
+			<span class="myTitle"><h5>Fast-Food-Fast</h5></span>
+			<a class="login_button" id="login_button" href="{{ url_for('signup') }}">
+				<span><i class="fas fa-user-plus" style="padding-right:5px;"></i></span>
+				Sign up
+			</a>
+			<a class="signup_button" id="signup_button" href="{{ url_for('login') }}">
+				<span><i class="fas fa-sign-in-alt" style="padding-right:5px;"></i></span>
+				Login
+			</a>
+		</div>
+		<hr>
+		{% with messages = get_flashed_messages(with_categories=true)%}
+			{% if messages %}
+				{% for category, message in messages %}
+					<p>{{ message }}</p>
+				{% endfor %}
+			{% endif %}
+		{% endwith %}
+		{% block content %}{% endblock content %}
+	  	</div>
+	</div>
+	<div class="footer">
+		<footer>
+			<ul>
+				<p>We're social! Connect with us:</p>
+				<a href="https://facebook.com">Facebook </a>|
+				<a href="https://twitter.com">Twitter </a>|
+				<a href="https://instagram.com">Instagram </a>|
+				<a href="https://plus.google.com/discover">Google +</a>
+			</ul>
+			<p>Copyright <span>&copy;</span> 2018 Fast Food Fast. All Rights Reserved</p>
+		</footer>
+	</div>
+	<script>
+		function openNav() {
+		    document.getElementById("sidebar").style.width = "250px";
+		    document.getElementById("main").style.marginLeft = "250px";
+		}
+
+		function closeNav() {
+		    document.getElementById("sidebar").style.width = "0";
+		    document.getElementById("main").style.marginLeft= "0";
+		}
+	</script>
+	{% block scripts %}{% endblock scripts %}
+</body>  
+</html>  -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static',filename='images/questioner.png') }}" style="width: 20px;height: 20px;border-radius: 50%;background-color: #ffff;">
+	<title>{% block title %}{% endblock title %}</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="static/css/new.css">
+	{% block styles %}{% endblock styles %}
+</head>
+<body>
+	<div class="navbar" id="navbar">
+		<img class="logo" src="static/images/questioner.png" alt="Home" style="width: 30px;height: 30px;">
+		<span></span>
+		<span class="user_status" id="user_status">
+			<a class="login_button" id="login_button" href="{{ url_for('signup') }}">
+				<span><i class="fas fa-user-plus" style="padding-right:5px;display: inline-block;"></i></span>
+				Sign up
+			</a>
+			<a class="signup_button" id="signup_button" href="{{ url_for('login') }}">
+				<span><i class="fas fa-sign-in-alt" style="padding-right:5px;display: inline-block;"></i></span>
+				Login
+			</a>
+		</span>
+	</div>
+	<div class="container" id="container">
+	</div>
+	<div class="footer">
+		<footer>
+			<ul>
+				<p>We're social! Connect with us:</p>
+				<a href="https://facebook.com">Facebook </a>|
+				<a href="https://twitter.com">Twitter </a>|
+				<a href="https://instagram.com">Instagram </a>|
+				<a href="https://plus.google.com/discover">Google +</a>
+			</ul>
+			<p>Copyright <span>&copy;</span> 2018 Fast Food Fast. All Rights Reserved</p>
+		</footer>
+	</div>
+	<script>
+		function openNav() {
+		    document.getElementById("sidebar").style.width = "250px";
+		    document.getElementById("main").style.marginLeft = "250px";
+		}
+
+		function closeNav() {
+		    document.getElementById("sidebar").style.width = "0";
+		    document.getElementById("main").style.marginLeft= "0";
+		}
+	</script>
+	{% block scripts %}{% endblock scripts %}
+</body>  
+</html> 

@@ -1,0 +1,57 @@
+{% extends "base.html"%}
+{% block content %}
+	<h4 style="text-align: center;">Our Menu</h4>
+	<p style="text-align: center;">Please login or sign up to order</p>
+	<hr>
+	<div class="row">
+		<div class="column" id="column">
+			<h5 style="text-align: center;">Chicken & Fish</h5>
+			<ul>
+				<li>Chicken<span><img src="{{ url_for('static',filename='images/chicken.jpeg') }}" style="width: 40px;height: 40px;border-radius: 50%;"></span></li>
+				<li>Fish<span><img src="{{ url_for('static',filename='images/fish.jpeg') }}" style="width: 40px;height: 40px;border-radius: 50%;"></span></li>
+			</ul>
+		</div>
+		<div class="column" id="column">
+		<h5 style="text-align: center;">Fries</h5>
+		<ul>
+			<h6 style="text-align: center;">Plain Chips</h6>
+			<li>Large<span><img src="{{ url_for('static',filename='images/chips.jpg') }}" style="width: 40px;height: 40px;border-radius: 50%;"></span></li>
+			<li>Small<span><img src="{{ url_for('static',filename='images/chips.jpg') }}" style="width: 35px;height: 35px;border-radius: 50%;"></span></li>
+		</ul>
+		<ul>
+			<h6 style="text-align: center;">Bhajia</h6>
+			<li><img src="{{ url_for('static',filename='images/bhajia.jpg') }}" style="width: 40px;height: 40px;border-radius: 50%;"><span>Large</span></li>
+			<li><img src="{{ url_for('static',filename='images/bhajia.jpg') }}" style="width: 35px;height: 35px;border-radius: 50%;"><span>Small</span></li>
+		</ul>
+		</div>
+		<div class="column" id="column">
+			<h5 style="text-align: center;">Sides</h5>
+		<li></li>
+		<li><img src="{{ url_for('static',filename='images/cs.jpeg') }}" style="width: 40px;height: 40px;border-radius: 50%;"><span>Cole Slaw</span></li>
+		<li><img src="{{ url_for('static',filename='images/mc.jpeg') }}" style="width: 40px;height: 40px;border-radius: 50%;"><span>Mac & Cheese</span></li>
+		</div>
+	</div>
+	<div class="row">
+		<div class="column" id="column">
+			<h5 style="text-align: center;">Sandwitches</h5>
+		<ul class="sides" id="sides">
+			<li><img src="{{ url_for('static',filename='images/veggie.jpg') }}" style="width: 40px;height: 40px;border-radius: 50%;"><span>Veggie Bugger</span></li>
+			<li><img src="{{ url_for('static',filename='images/beef.jpg') }}" style="width: 40px;height: 40px;border-radius: 50%;"><span>Beef Bugger</span></li>
+			<li><img src="{{ url_for('static',filename='images/chicken_bugger.png') }}" style="width: 40px;height: 40px;border-radius: 50%;"><span>Chicken Bugger</span></li>
+			<li><img src="{{ url_for('static',filename='images/beef_cheese.png') }}" style="width: 40px;height: 40px;border-radius: 50%;"><span>Cheese Beef Bugger</span></li>
+		</ul>
+		</div>
+		<div class="column" id="column">
+			<h5 style="text-align: center;">Drinks</h5>
+		<ul class="cold_drinks">
+			<h6 style="text-align: center;">Cold drinks</h6>
+			<li><img src="{{ url_for('static',filename='images/soda.png') }}" style="width: 40px;height: 40px;border-radius: 50%;">Soda</li>
+			<li><img src="{{ url_for('static',filename='images/juice.jpg') }}" style="width: 40px;height: 40px;border-radius: 50%;background-color:inherit;">Juice</li>
+		</ul>
+		<ul class="hot_drinks">
+			<h6 style="text-align: center;">Hot drinks</h6>
+			<li><img src="{{ url_for('static',filename='images/tea.jpg') }}" style="width: 40px;height: 40px;border-radius: 50%;">Tea</li>
+			<li><img src="{{ url_for('static',filename='images/coffee.jpeg') }}" style="width: 40px;height: 40px;border-radius: 50%;">Coffee</li>
+		</ul>
+	</div>
+{% endblock content %}

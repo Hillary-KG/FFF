@@ -1,0 +1,137 @@
+/*.sidebar {
+  width: 130px;
+  position: fixed;
+  z-index: 1;
+  top: 20px;
+  left: 10px;
+  background: #eee;
+  overflow-x: hidden;
+  padding: 8px 0;
+}
+.sidebar a:hover {
+  color: #064579;
+}*/
+
+
+.navbar a:hover {
+  background: #752020;
+  color: #ffff;
+}
+
+.navbar a {
+  float: left;
+  display: inline-block;
+  color: #ffff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.navbar {
+  overflow: hidden;
+  background-color: #31aaff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 55px;
+}
+.logo {
+	float: left;
+	display: inline-block;
+}
+.user_status{
+	float: right;
+
+}
+body{
+	margin: 0px;
+	font-family: 'Open Sans';
+}
+.search{
+	width: 50%;
+	border-radius: 2px;
+	border:none;
+	top: 30px;
+	display: inline-block;
+	margin: 15px 0px 15px 60px;
+	padding: 7px;
+}
+
+.footer {
+    position: fixed;
+    overflow: hidden;
+    padding:0;
+    background-color:#31aaff;
+    text-align: center;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    color: #0a0a0a;
+    text-decoration:none;
+}
+
+.footer a{
+    text-decoration:none;
+}
+
+.sidebar {
+  width: 30%;
+  position: fixed;
+  z-index: 1;
+  top: 20px;
+  left: 10px;
+  background: #eee;
+  overflow-x: hidden;
+  padding: 8px 0;
+  float: left;
+}
+
+.sidebar a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #2196F3;
+  display: block;
+}
+
+.sidebar a:hover {
+  color: #064579;
+}
+
+.main_content {
+  margin-left: 140px; /* Same width as the sidebar + left position in px */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+  float: right;
+  width: 70%;
+}
+.your_meetups li{
+	text-decoration: none;
+	list-style: none;
+}
+.meetup_interests li{
+	text-decoration: none;
+	list-style: none;
+}
+.meetups li{
+	text-decoration: none;
+	list-style: none;
+}
+.loginForm {
+	background-color: #31aaff;
+	border-radius: 2px;
+	border:none;
+	width: 50%;
+}
+.signupForm {
+	background-color: #31aaff;
+	border-radius: 2px;
+	border:none;
+	width: 50%;
+}
+.container {
+	position: absolute;
+}
+.section {
+	height: 100%;
+}
